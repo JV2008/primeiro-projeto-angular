@@ -1,0 +1,14 @@
+<div class="resumo">
+  <div class="cartao">
+    <span>Saldo</span>
+    <strong>{{ saldo | currency:'BRL' }}</strong>
+  </div>
+  <div class="cartao">
+    <span>Entradas</span>
+    <strong class="entrada">{{ entradas | currency:'BRL' }}</strong>
+  </div>
+  <div class="cartao">
+    <span>Saídas</span>
+    <strong class="saida">{{ saidas | currency:'BRL' }}</strong>
+  </div>
+</div>

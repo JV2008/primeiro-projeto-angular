@@ -1,0 +1,24 @@
+.resumo {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 140px;
+}
+
+.entrada {
+  color: #2e7d32;
+}
+
+.saida {
+  color: #c62828;
+}

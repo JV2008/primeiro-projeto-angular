@@ -1,0 +1,7 @@
+<div class="dashboard">
+  <app-transacao-form></app-transacao-form>
+
+  <app-painel-resumo [transacoes]="transacaoService.transacoes()"></app-painel-resumo>
+
+  <app-lista-transacoes [transacoes]="transacaoService.transacoes()" (remover)="remover($event)"></app-lista-transacoes>
+</div>

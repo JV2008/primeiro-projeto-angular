@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+li.entrada {
+  border-left: 4px solid #2e7d32;
+}
+
+li.saida {
+  border-left: 4px solid #c62828;
+}
+
+button {
+  border: none;
+  background: #c62828;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}

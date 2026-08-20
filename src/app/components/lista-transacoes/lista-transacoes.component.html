@@ -1,0 +1,11 @@
+<ul *ngIf="transacoes().length; else vazio">
+  <li *ngFor="let t of transacoes()" [class.entrada]="t.tipo === 'entrada'" [class.saida]="t.tipo === 'saida'">
+    <span>{{ t.data }} - {{ t.descricao }}</span>
+    <span>{{ t.valor | currency:'BRL' }}</span>
+    <button type="button" (click)="excluir(t.id)">Excluir</button>
+  </li>
+</ul>
+
+<ng-template #vazio>
+  <p>Nenhuma transação cadastrada.</p>
+</ng-template>

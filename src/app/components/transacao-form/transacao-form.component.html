@@ -1,0 +1,10 @@
+<form (ngSubmit)="enviar()">
+  <input [(ngModel)]="descricao" name="descricao" placeholder="Descrição" required />
+  <input [(ngModel)]="valor" name="valor" type="number" placeholder="Valor" required />
+  <select [(ngModel)]="tipo" name="tipo">
+    <option value="entrada">Entrada</option>
+    <option value="saida">Saída</option>
+  </select>
+  <input [(ngModel)]="data" name="data" type="date" required />
+  <button type="submit">Adicionar</button>
+</form>
