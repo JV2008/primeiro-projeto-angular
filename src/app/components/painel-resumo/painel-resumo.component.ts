@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Transacao } from '../../models/transacao';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-painel-resumo',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './painel-resumo.component.html',
   styleUrl: './painel-resumo.component.css',
 })
